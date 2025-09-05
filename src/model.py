@@ -4,7 +4,7 @@ from sklearn.compose import ColumnTransformer
 from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from sklearn.pipeline import Pipeline
-from sklearn.linear_model import SGDRegressor
+from sklearn.linear_model import Ridge
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error, mean_absolute_error
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -40,7 +40,7 @@ def build_pipeline(df):
 
     pre = ColumnTransformer(transformers, remainder="drop", verbose_feature_names_out=False)
 
-    model = SGDRegressor(random_state=42, max_iter=1000, tol=1e-3, penalty="elasticnet", alpha=1e-4, l1_ratio=0.15)
+    model = Ridge(alpha=1.0) 
     pipe = Pipeline([("pre", pre), ("model", model)])
     return pipe, target
 
