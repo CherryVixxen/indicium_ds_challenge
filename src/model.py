@@ -40,7 +40,7 @@ def build_pipeline(df):
 
     pre = ColumnTransformer(transformers, remainder="drop", verbose_feature_names_out=False)
 
-    model = SGDRegressor(random_state=42, max_inter=1000, tol=1e-3, penalty="elasticnet", alpha=1e-4, l1_ratio=0.15)
+    model = SGDRegressor(random_state=42, max_iter=1000, tol=1e-3, penalty="elasticnet", alpha=1e-4, l1_ratio=0.15)
     pipe = Pipeline([("pre", pre), ("model", model)])
     return pipe, target
 
