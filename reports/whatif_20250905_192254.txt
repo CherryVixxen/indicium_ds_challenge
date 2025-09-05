@@ -1,0 +1,11 @@
+WHAT-IF PREDICTION
+modelo: models/imdb_ridge.pkl
+json:   examples/example_one.json
+
+before: 8.2241
+after:  8.2880
+delta:  +0.0639
+
+changes:
+  Genre = Drama, Thriller
+  Meta_score = 85
