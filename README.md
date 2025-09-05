@@ -1,2 +1,1 @@
-# indicium_ds_challenge
-Desafio Técnico de Ciencia de Dados da Indicium
+# Desafio de Ciência de Dados da Lighthouse, Novembro de 2025
