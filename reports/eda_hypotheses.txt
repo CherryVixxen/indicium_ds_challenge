@@ -1,0 +1,3 @@
+H1: Filmes com mais votos tendem a ter nota ligeiramente mais alta.
+H2: Meta_score correlaciona positivamente com IMDB_Rating.
+H3: Alguns gêneros dominantes em volume (ex.: Drama) concentram notas altas por amostragem.
