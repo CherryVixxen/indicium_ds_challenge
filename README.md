@@ -1,6 +1,45 @@
 # Desafio de Ciência de Dados da Lighthouse
 #### Setembro de 2025
 
+## Como Instalar
+
+### Windows (PowerShell)
+
+#### 1) Criar e ativar o ambiente virtual
+    python -m venv .venv
+    . .\.venv\Scripts\Activate.ps1
+
+#### 2) Atualizar o pip
+    python -m pip install --upgrade pip
+
+#### 3) Instalar as dependências
+    pip install -r requirements.txt
+
+#### 4) Selecionar a .venv no VS Code (opcional)
+    Ctrl+Shift+P → Python: Select Interpreter → escolha a .venv do projeto
+
+#### 5) Teste rápido
+    python -c "import pandas, sklearn, joblib; print('ok')"
+
+
+### macOS / Linux
+
+#### 1) Criar e ativar o ambiente virtual
+    python3 -m venv .venv
+    source .venv/bin/activate
+
+#### 2) Atualizar o pip
+    python -m pip install --upgrade pip
+
+#### 3) Instalar as dependências
+    pip install -r requirements.txt
+
+#### 4) Selecionar a .venv no VS Code (opcional)
+    Ctrl+Shift+P → Python: Select Interpreter → escolha a .venv do projeto
+
+#### 5) Teste rápido
+    python -c "import pandas, sklearn, joblib; print('ok')"
+
 ## Como Executar
 
 #### 1) Treinar e salvar modelo
